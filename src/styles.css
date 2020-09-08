@@ -1,0 +1,15 @@
+*{
+    align-items: center;
+    background-color: lightcyan;
+  }
+
+.navBar{
+    /* margin-top: px; */
+    height: 92px;
+    font-family: "Oswald", sans-serif;
+    background-color:orange;
+    text-decoration: none;
+    padding: 2em;
+    /* display: flex; */
+    /* flex-wrap: wrap */
+  }
