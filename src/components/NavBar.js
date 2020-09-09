@@ -6,14 +6,26 @@ class NavBar extends React.Component {
 
     render(){
         return(
-            <div className= "navBar">
+            <div className="navBar">
   
             <div>
-                <NavLink  to='/'>Home</NavLink> 
+                <NavLink to='/' className="navLink">Home</NavLink> 
             </div>
-            
+            <span></span>
             <div>
-                <NavLink  to='/about'>About</NavLink> 
+                <NavLink  to='/about' className = "navLink">About</NavLink> 
+            </div>
+            <span></span>
+            <div>
+                <NavLink to='/projects' className = "navLink">Projects</NavLink>
+            </div>
+            <span></span>
+            <div>
+                <NavLink to='/blogs' className = "navLink">Blogs</NavLink>
+            </div>
+            <span></span>
+            <div>
+                <NavLink to='/contact' className = "navLink">Contact</NavLink>
             </div>
         </div>
         )

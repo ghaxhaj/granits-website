@@ -1,10 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Home from "./components/Home"
 import About from "./components/About"
+import Projects from "./components/Projects"
+import Contact from "./components/Contact"
+import Blogs from "./components/Blogs"
 
 
 function App() {
@@ -14,8 +15,13 @@ function App() {
     <NavBar/>
 
     <Switch>
+      <Route path = '/projects'><Projects /></Route>
+      <Route path = '/blogs'><Blogs /></Route>
+      <Route path = '/contact'><Contact /></Route>
       <Route path = '/about'><About /></Route>
       <Route path = '/'><Home /></Route>
+      
+  
     </Switch>
 
   </Router>
