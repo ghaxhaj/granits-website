@@ -13,7 +13,7 @@ class NavBar extends React.Component {
             </div>
             <span></span>
             <div>
-                <NavLink  to='/about' className = "navLink">About</NavLink> 
+                <NavLink  to='/about' className = "navLink">About Me</NavLink> 
             </div>
             <span></span>
             <div>

@@ -2,6 +2,7 @@ import React from "react"
 import Photo from "../images/photo.jpeg"
 import ThatsMe from "../images/thatsme.jpeg"
 import Resume from "../FinalResume.pdf"
+import "../styles.css"
 
 class Home extends React.Component {
     
@@ -21,7 +22,7 @@ class Home extends React.Component {
         
         return(
             <div> 
-                <img className = "homeImg" src={Photo}/>
+                <img className = "homeImg" linkto= "/home" src={Photo}/>
                 {this.state.hovered && <img className = "thatsMe" src={ThatsMe} />}
                 <div className = "homeBio">
         <h1 className = "homeName" onMouseOver = {this.hoverOverName}>Granit Haxhaj</h1>
