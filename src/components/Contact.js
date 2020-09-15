@@ -1,5 +1,6 @@
 import React from "react"
-import { init } from "emailjs"
+import emailjs from 'emailjs-com';
+import "../styles.css"
 
 
 class Contact extends React.Component{
@@ -8,7 +9,8 @@ class Contact extends React.Component{
         name: "",
         number: "",
         email: "",
-        message: ""
+        message: "",
+        submitted: false
     }
 
     eventHandler = (event) => {
@@ -17,30 +19,22 @@ class Contact extends React.Component{
     }
 
     handleSubmit = (event) => {
-      emailjs.send('ghaxhaj@fordham.edu', 'template_t3473fj', this.state)
-      .then(console.log("Your Email has been Sent"))
+      event.preventDefault()
+      emailjs.send('ghaxhaj@fordham.edu', 'template_t3473fj', this.state, "user_IL9lr2nt8XPG23hR5A284")
+      .then(this.setState({submitted:true}))
     }
 
     render(){
         return(
             <div>
-                {/* {console.log(this.state)} */}
-                <script type="text/javascript"
-                    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-                </script>
-                <script type="text/javascript">
-                {function(){
-                emailjs.init("user_IL9lr2nt8XPG23hR5A284");
-                }}
-                </script>
-
+                {this.state.submitted ? <h1>Thank You! I will contact you shortly!</h1> :
                 <form>
                     Name: <input type="text" name="name" onChange = {this.eventHandler}></input><br></br>
                     Number: <input type="text" name="number" onChange = {this.eventHandler}></input><br></br>
                     E-Mail: <input type="email" name="email" onChange = {this.eventHandler}></input><br></br>
                     Message: <textarea type="text" name="message" onChange = {this.eventHandler}></textarea><br></br>
                     <button type = "submit" onClick = {this.handleSubmit}>Submit</button>
-                    </form>
+                </form> }
             </div>
         )
     }
