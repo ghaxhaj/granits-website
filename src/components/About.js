@@ -61,7 +61,7 @@ class About extends React.Component {
                     </div>
                     <div class="column">
                         <div class="card">
-                            <img src = {Pokemon} className = "pokeImg"/>
+                            <img src = {Pokemon} className = "cardImg"/>
                             <h1 className = "cardHeader">Pokemon</h1>
                             <p className = "cardText">I enjoy gaming, but my favorite game of all time has to be Pokemon. I spent countless hours training my pokemon, competing online, and shiny hunting!</p>
                         </div>

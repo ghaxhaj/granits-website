@@ -23,7 +23,7 @@ class Blogs extends React.Component{
         <div className="card">
             {post.thumbnail ? <img src = {post.thumbnail} className = "projectImg"/> : <img src = {Medium} className = "projectImg"/>}
             <h1 className = "cardHeader">{post.title}</h1>
-    <p className = "cardText">Posted on: {post.pubDate}</p>
+            <p className = "cardText">Posted on: {post.pubDate}</p>
             <a href = {post.link} className = "projectLink">Read the Full Blog Here!</a>
         </div>
     </div>})

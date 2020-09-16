@@ -14,7 +14,7 @@ class Projects extends React.Component {
                         <div className="card">
                             <img src = {nbaRef} className = "projectImg"/>
                             <h1 className = "cardHeader">NBA Reference</h1>
-                            <p className = "cardText"> NBA Reference is an app that tracks all data from the 2019-20 NBA Season and allows for game simulations. </p>
+                            <p className = "cardText"> NBA Reference is an app that tracks all data from the 2019-20 NBA Season and allows for game simulations. Built with React.js and a Ruby on Rails backend.</p>
                             <a href = "https://github.com/ghaxhaj/NBARef" className = "projectLink">Front-End Repository</a><br></br>
                             <a href = "https://github.com/ghaxhaj/NBARefBackEnd" className = "projectLink">Back-End Repository</a><br></br>
                             <a href = "https://vimeo.com/421127797" className = "projectLink">Demo</a>
