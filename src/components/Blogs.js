@@ -33,7 +33,7 @@ class Blogs extends React.Component{
     render(){
         return(
             <div className="row">
-                {console.log(this.state.blogs.items)}
+                {console.log(this.state.blogs)}
                 {this.renderBlogs()}
             </div>
         )
